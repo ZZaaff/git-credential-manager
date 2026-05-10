@@ -10,15 +10,7 @@ on Windows, macOS, and Linux. It aims to provide a consistent and secure
 authentication experience, including multi-factor auth, to every major source
 control hosting service and platform.
 
-GCM supports (in alphabetical order) [Azure DevOps][azure-devops], Azure DevOps
-Server (formerly Team Foundation Server), Bitbucket, GitHub, and GitLab.
-Compare to Git's [built-in credential helpers][git-tools-credential-storage]
-(Windows: wincred, macOS: osxkeychain, Linux: gnome-keyring/libsecret), which
-provide single-factor authentication support for username/password only.
 
-GCM replaces both the .NET Framework-based
-[Git Credential Manager for Windows][gcm-for-windows] and the Java-based
-[Git Credential Manager for Mac and Linux][gcm-for-mac-and-linux].
 
 ## Install
 
@@ -34,7 +26,7 @@ GCM only works with HTTP(S) remotes; you can still use Git with SSH:
 - [GitHub SSH][github-ssh]
 - [Bitbucket SSH][bitbucket-ssh]
 
-Feature|Windows|macOS|Linux\*
+Feature|Windows|macOS\*
 -|:-:|:-:|:-:
 Installer/uninstaller|&#10003;|&#10003;|&#10003;
 Secure platform credential storage [(see more)][gcm-credstores]|&#10003;|&#10003;|&#10003;
@@ -44,7 +36,7 @@ Two-factor authentication support for Bitbucket|&#10003;|&#10003;|&#10003;
 Two-factor authentication support for GitLab|&#10003;|&#10003;|&#10003;
 Windows Integrated Authentication (NTLM/Kerberos) support|&#10003;|_N/A_|_N/A_
 Basic HTTP authentication support|&#10003;|&#10003;|&#10003;
-Proxy support|&#10003;|&#10003;|&#10003;
+
 `amd64` support|&#10003;|&#10003;|&#10003;
 `x86` support|&#10003;|_N/A_|&#10007;
 `arm64` support|best effort|&#10003;|&#10003;
@@ -115,21 +107,22 @@ We're [MIT][gcm-license] licensed.
 When using GitHub logos, please be sure to follow the
 [GitHub logo guidelines][github-logos].
 
-[azure-devops]: https://azure.microsoft.com/en-us/products/devops
-[azure-devops-ssh]: https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops
+
+[azure-devops]: (https://github.com/ZZaaff/git-credential-manager/main/README.md)
+[azure-devops-ssh]: (https://github.com/ZZaaff/git-credential-manager/main/README.md/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops
 [bitbucket]: https://bitbucket.org
 [bitbucket-ssh]: https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html
 [build-status-badge]: https://github.com/git-ecosystem/git-credential-manager/actions/workflows/continuous-integration.yml/badge.svg
 [docs-index]: https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/README.md
 [dotnet]: https://dotnet.microsoft.com
-[dotnet-distributions]: https://learn.microsoft.com/en-us/dotnet/core/install/linux
-[git-credential-helper]: https://git-scm.com/docs/gitcredentials
-[gcm]: https://github.com/git-ecosystem/git-credential-manager
+[dotnet-distributions]: https://github.com/ZZaaff/git-credential-manager/edit/main/README.md
+[git-credential-helper]: https://github.com/ZZaaff/git-credential-manager/edit/main/README.md
+[gcm]: https://github.com/ZZaaff/git-credential-manager
 [gcm-coc]: CODE_OF_CONDUCT.md
-[gcm-commit-12294990]: https://github.com/git/git/commit/12294990c90e043862be9eb7eb22c3784b526340
-[gcm-contributing]: CONTRIBUTING.md
+[gcm-commit-pull]: https://github.com/git/git/commit/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
+[gcm-contributing]: CONTRIBUTING.ZZaaff/ 
 [gcm-credstores]: https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/credstores.md
-[gcm-for-mac-and-linux]: https://github.com/microsoft/Git-Credential-Manager-for-Mac-and-Linux
+[gcm-for-mac-and-linux]: https://github.com/ZZaaff/git-credential-manager/main/README.md
 [gcm-for-windows]: https://github.com/microsoft/Git-Credential-Manager-for-Windows
 [gcm-http-proxy]: https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/netconfig.md#http-proxy
 [gcm-license]: LICENSE
